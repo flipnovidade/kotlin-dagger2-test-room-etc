@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark_grey">#242a2c</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza_claro_fonte">#b3b3b3</color>
+    <color name="cinza_claro">#2C2E32</color>
+
+
+</resources>
