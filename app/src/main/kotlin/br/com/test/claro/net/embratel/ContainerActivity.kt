@@ -22,7 +22,6 @@ class ContainerActivity : AppCompatActivity() {
 
         FragmentHelper().openFragmentWithSheetStyle(supportFragmentManager, R.id.sheet_container,
                 ListShotFragment.newInstance(), true)
-        
     }
 
     override fun onBackPressed() {
