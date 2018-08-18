@@ -2,6 +2,8 @@ package br.com.test.claro.net.embratel
 
 import android.app.Application
 import android.support.multidex.MultiDexApplication
+import br.com.test.claro.net.embratel.api.ApiModule
+import br.com.test.claro.net.embratel.api.InteractorModule
 import br.com.test.claro.net.embratel.di.module.common.AppComponent
 import br.com.test.claro.net.embratel.di.module.common.AppModule
 import br.com.test.claro.net.embratel.di.module.common.DaggerAppComponent
@@ -28,6 +30,8 @@ class AppDelegate: Application() {
     fun init(){
         component = DaggerAppComponent.builder()
                     .appModule(AppModule(instance))
+                    .apiModule(ApiModule())
+                    .interactorModule(InteractorModule())
                     .build()
         component.inject(instance)
     }
